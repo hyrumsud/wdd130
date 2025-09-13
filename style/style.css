@@ -1,23 +1,73 @@
-div a {
-    text-align: right;
-    padding: 16px;
-
+header { 
+    position: ; 
+    top: 10;
+    z-index: 1000;
+    width: 100%;
 }
+body {
+    margin: 0;
+}
+
+nav {
+    display: block;
+    padding: 8px 16px;
+    margin: 0 auto;
+    border-radius: 60px 60px 60px 60px;
+    max-width: 1000px;
+    background: linear-gradient(to bottom, grey, black );
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0.75 rem 1 rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight 600;
+    padding: .5rem .75rem::after
+    position: relative;
+    transition: color .2s ease, background-color .2s ease, transform .1s ease;
+}
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    left: .78rem;
+    right: .75rem;
+    bottom: .35rem; 
+    height: 2px;
+    background: rgb(161, 73, 73);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
 main {
     display: block;
     max-width: 1000px;
     text-align: center;
     border-bottom: 60px;
+    margin: 0 auto;
+    
 }
 
 section.head { 
     background: linear-gradient(to bottom, black, grey);
     display: block;
     max-width: 100%;
-    border-radius: 60px 60px 0 0; 
+    border-radius: 30px 30px 0 0; 
     color: white;
     padding: 0px;
-    margin: 0;
+    margin: 0 auto;
+
 }
 
 section h1 {
@@ -27,16 +77,18 @@ section h1 {
 
 aside {
     background: linear-gradient(to bottom, grey, white);
-    margin: 0;
     padding: 16px;
     border-radius: 0 0 60px 60px;
     padding-bottom: 150px;
+    max-width: 969px;
+    margin: 0 auto;
 }
 
 aside h2 {
     display: block;
     margin: 0;
     padding: 16px;
+    text-align: center;
 }
 
 aside img {
