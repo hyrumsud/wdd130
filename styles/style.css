@@ -6,6 +6,7 @@ header {
 }
 body {
     margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -13,7 +14,7 @@ nav {
     padding: 8px 16px;
     margin: 0 auto;
     border-radius: 60px 60px 60px 60px;
-    max-width: 1000px;
+    max-width: 100%;
     background: linear-gradient(to bottom, grey, black );
     box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
 }
@@ -51,13 +52,16 @@ nav a::after {
 
 main {
     display: block;
-    max-width: 1000px;
+    max-width: 100%;
     text-align: center;
     border-bottom: 60px;
     margin: 0 auto;
     
 }
 
+main p {
+    color: black;
+}
 section.head { 
     background: linear-gradient(to bottom, black, grey);
     display: block;
@@ -76,10 +80,10 @@ section h1 {
 
 aside {
     background: linear-gradient(to bottom, grey, white);
-    padding: 16px;
+    padding: 0;
     border-radius: 0 0 60px 60px;
     padding-bottom: 150px;
-    max-width: 969px;
+    max-width: 100%;
     margin: 0 auto;
     color: black;
 }
