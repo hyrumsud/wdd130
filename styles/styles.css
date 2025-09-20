@@ -17,6 +17,8 @@ nav {
     max-width: 100%;
     background: linear-gradient(to bottom, grey, black );
     box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+    background-color: #333;
+    background-image: linear-gradient(to bottom, grey, black);
 }
 
 nav ul {
@@ -30,6 +32,7 @@ nav ul {
 }
 
 nav a {
+    display: block;
     color: white;
     text-decoration: none;
     padding: .5rem .75rem;
@@ -73,20 +76,35 @@ section.head {
 
 }
 
+h1 {
+    color: white;
+}
+
 section h1 {
     margin: 0;
     padding: 16px ;
 }
 
-aside {
-    background: linear-gradient(to bottom, grey, white);
-    padding: 0;
-    border-radius: 0 0 60px 60px;
-    padding-bottom: 150px;
-    max-width: 100%;
-    margin: 0 auto;
-    color: black;
+main img {
+  width: 200px;                   
+  height: auto;                   
+  border: 1px solid #000;        
+  padding: 0;                     
+  box-shadow: 16px 32px 64px rgba(0,0,0,.5);  
+  display: block;                 
+  margin: 20px auto;              
 }
+
+aside {
+  width: 100%;                    
+  margin: 0 auto;                 
+  border: 0;                      
+  padding: 0;                     
+  background-color: #eee;        
+  color: black;                  
+  background-image: linear-gradient(to bottom, grey, white); 
+}
+
 
 aside h2 {
     display: block;
@@ -112,12 +130,15 @@ aside p {
     text-align: justify;
 }
 
+
 footer {
-    display: block;
-    padding-top: 5px;
-    border-top: 1px solid #0915be;
-    text-align: center;
+  margin-top: 5px;                
+  border-top: 1px solid #05195e;  
+  text-align: center;             
+  padding: 10px 0;                
 }
+
+
 
 aside img.image2 {
     display: block;
