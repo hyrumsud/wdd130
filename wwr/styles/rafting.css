@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --body-font: Arial, Helvetica, sans-serif;
+  --body---accent1-color: #333;
+}
+
+
+
+body {
+    background-image: url(/wwr/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--body-font);
+    color: var(--body---accent1-color);
+}
+
+header, main, footer{
+  width: 800px;
+  margin: 0 auto;
+}
+.hero {
+    width: 100%;
+    flex-direction: column;
+    min-height: clamp(280px, 45vh, 520px);
+    padding: 64px 16px 32px;      
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+ }
+
+nav {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+}
+nav img{
+    border-radius: 150px 150px 150px 150px;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    max-height: 50px;
+    align-items: center;
+    display: block;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: aqua;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 18px 12px;
+  text-align: center;
+  color: #fff;
+  isolation: isolate; 
+}
+
+footer::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/wwr/images/hero.jpg") center/cover no-repeat; 
+  filter: brightness(.7) saturate(1.1) contrast(1.05);
+  z-index: -2;
+}
+
+footer::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.65) 0%,
+    rgba(0,0,0,.45) 45%,
+    rgba(0,0,0,.25) 100%
+  );
+  z-index: -1;
+}
+
+footer .socialmedia{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+footer .socialmedia img{
+  width: 38px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.5)) saturate(1.1);
+  transition: transform .2s ease, filter .2s ease;
+}
+
+footer .socialmedia img:hover{
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.6)) saturate(1.2);
+}
+
+footer p{
+  margin: 0;
+  font: 500 0.95rem/1.4 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  text-shadow: 0 2px 6px rgba(0,0,0,.7); /* mejora legibilidad sobre la foto */
+}
+
+
+/* Class Selectors */
