@@ -101,6 +101,62 @@ header, main, footer{
   display:block;
   clear:both;
 }
+.history{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  width: min(1100px, 92%);
+  margin: 24px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.history > p{
+  color: #fff;
+  line-height: 1.6;
+  background: rgba(0,0,0,.35);         
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0,0,0,.30);
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
+  backdrop-filter: blur(2px);           
+}
+
+.history > p{
+  color: #fff;
+  line-height: 1.6;
+  background: rgba(0,0,0,.35);         /* caja semitransparente */
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0,0,0,.30);
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
+  backdrop-filter: blur(2px);           /* mejora legibilidad sobre foto (si el navegador lo soporta) */
+}
+
+.history > img{
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: start;
+  width: clamp(230px, 90%, 360px);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0,0,0,.35);
+}
+
+
+.history h2{
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,.3));
+  text-shadow: 0 2px 6px rgba(0,0,0,.6);
+  width: fit-content;
+  margin: 0 auto 8px;
+}
 
 
 nav {
@@ -217,6 +273,53 @@ footer p{
     width: 100%;
     margin: 10px 0 0 0;
   }
+}
+
+
+.adventure{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  max-width: min(1100px, 92%);
+  margin: 24px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.adventure h2{
+  grid-column: 1 / -1;        
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,.35));
+  text-shadow: 0 2px 6px rgba(0,0,0,.6);
+  width: fit-content;
+  margin: 0 auto 10px;
+}
+
+.adventure-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.adventure > img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
+}
+.adventure > img:hover{
+  transform: translateY(-4px) scale(1.03);
+  filter: brightness(1.05) saturate(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,.45);
 }
 
 /* Class Selectors */
