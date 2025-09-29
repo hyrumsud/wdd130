@@ -133,7 +133,7 @@ header, main, footer{
   backdrop-filter: blur(2px);           /* mejora legibilidad sobre foto (si el navegador lo soporta) */
 }
 
-.history > img{
+.history > figure img{
   grid-column: 2 / 3;
   justify-self: center;
   align-self: start;
@@ -307,7 +307,7 @@ footer p{
   align-items: stretch;
 }
 
-.adventure > img{
+.adventure > figure img{
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
@@ -316,7 +316,7 @@ footer p{
   box-shadow: 0 8px 20px rgba(0,0,0,.35);
   transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
 }
-.adventure > img:hover{
+.adventure > figure img:hover{
   transform: translateY(-4px) scale(1.03);
   filter: brightness(1.05) saturate(1.05);
   box-shadow: 0 12px 28px rgba(0,0,0,.45);
