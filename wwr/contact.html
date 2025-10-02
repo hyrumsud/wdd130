@@ -2,48 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="name" content="we can made it some special for you" />
-    <meta name="description"
-        content="If you want to get the best experience of your life you can sumitted your information and might won a free demostration." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="name" content="We can make something special for you" />
+    <meta name="description" content="Get in touch to plan your next white-water rafting experience." />
     <meta name="author" content="Hyrum Sahyl Isla Hernández" />
     <title>The Rapids Adventure Co. | Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
-<body>
+<body class="contact-page">
     <header>
-        <nav class="site-nav">
-            <a href="/index.html">
-                <img src="images/logo.jpg" alt="Logo — The Rapids Adventure Co." class="logo" />
+        <nav class="site-nav" aria-label="Primary">
+            <a class="brand" href="index.html">
+                <img src="images/logo.jpg" alt="The Rapids Adventure Co. logo" class="logo" />
             </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
+    <main id="main">
+
+        <section class="hero" aria-labelledby="contact-title">
+            <article class="hero-article">
+                <h1 id="contact-title">White Water Rafting Company</h1>
+                <address class="company-address">
+                    123 Main River Street<br />
+                    Kolob, California<br />
+                    <a href="tel:+19999999999">+1 999 999 9999</a><br />
+                    <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+                </address>
+            </article>
+        </section>
+
+        <!-- Map + Form layout -->
+        <section class="contact-layout" aria-label="Contact form and map">
+            <div class="map" role="region" aria-label="Location map">
+                <iframe title="White Water Rafting Company location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7529.809871275637!2d-96.7641136932187!3d19.32993101413314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4c9ef1884b365%3A0xdca8bab59d646f3a!2sRapidos%20de%20Jalcomulco%2C%20Veracruz%20%7C%20Rafting%20Desafiando%20Expediciones!5e0!3m2!1ses-419!2smx!4v1759368306696!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <form class="contact-form" action="#" method="post" novalidate>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required />
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                        required />
+                </div>
+
+                <fieldset class="field">
+                    <legend>Message Purpose</legend>
+                    <div class="options">
+                        <label><input type="radio" name="purpose" value="general" checked /> General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type here..."></textarea>
+                </div>
+
+                <div class="field checkbox">
+                    <label>
+                        <input id="newsletter" name="newsletter" type="checkbox" />
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button class="btn primary" type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <!-- Staff strip -->
+        <section class="staff" aria-labelledby="staff-title">
+            <h2 id="staff-title">We Are Here to Serve You</h2>
+            <ul class="staff-list">
+                <li class="staff-card">
+                    <img src="images/staff-1.jpeg" alt="Employee profile — Alex" />
+                    <h3>Alex Johnson</h3>
+                    <p>Guide Lead</p>
+                </li>
+                <li class="staff-card">
+                    <img src="/wwr/images/staff-2.jpeg" alt="Employee profile — Sam" />
+                    <h3>Sam Rivera</h3>
+                    <p>Safety Instructor</p>
+                </li>
+                <li class="staff-card">
+                    <img src="images/staff-3.jpeg" alt="Employee profile — Casey" />
+                    <h3>Casey Lee</h3>
+                    <p>Trip Coordinator</p>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook.png" alt="Follow us on Facebook" width="40" />
+                <img src="images/facebook.png" alt="Facebook" width="40" />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.png" alt="Follow us on Twitter" width="40" />
+                <img src="images/twitter.png" alt="Twitter / X" width="40" />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/instgram.png" alt="Follow us on Instagram" width="40" />
+                <img src="images/instgram.png" alt="Instagram" width="40" />
             </a>
             <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/tiktok.jpg" alt="Follow us on TikTok" width="40" />
+                <img src="images/tiktok.jpg" alt="TikTok" width="40" />
             </a>
         </nav>
-        <p>&copy; 2025 The Rapids Adventure Co. | Hyrum Sahyl Isla Hernandez</p>
+        <p>&copy; 2025 The Rapids Adventure Co. &middot; Hyrum Sahyl Isla Hernández</p>
     </footer>
 </body>
 
