@@ -3,108 +3,209 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="name" content="we can made it some special for you" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Learn more about The Rapids Adventure Co. We create unforgettable white-water rafting and outdoor experiences for families, groups, and adventurers in a safe and fun way." />
-    <meta name="author" content="Hyrum Sahyl Isla Hernández" />
-    <title>The Rapids Adventure Co. | About Us</title>
-    <link rel="stylesheet" href="styles/rafting.css" />
+        content="White-water rafting trips for all levels. Compare routes, difficulty, duration and what’s included.">
+    <meta name="author" content="Hyrum Sahyl Isla Hernández">
+    <title>The Rapids Adventure Co. | Trips</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <nav class="site-nav">
-            <a href="/index.html">
-                <img src="images/logo.jpg" alt="Logo — The Rapids Adventure Co." class="logo" />
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="The Rapids Adventure Co. logo" class="logo">
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html" aria-current="page">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <article class="hero-article">
-                <h1>About Us</h1>
-                <figure>
-                    <img src="images/happy.jpg" alt="Happy clients enjoying a rapid section" />
-                    <figcaption>Happy clients on the river</figcaption>
-                </figure>
-                <p>At The Rapids Adventure Co. we are passionate about water, nature, and adrenaline. We create
-                    unforgettable rafting and water sports experiences for families, groups of friends, and adventurers
-                    who want to feel the power of the river in a safe and fun way.</p>
-                <p>Our team is made up of certified guides and adventure lovers who will not only accompany you during
-                    the ride but also teach you how to enjoy and respect the power of the river.</p>
-            </article>
+        <!-- HERO -->
+        <section class="hero hero--trips">
+            <h1>Choose Your Adventure</h1>
+            <p>Safe, guided rafting for families, first-timers and thrill seekers.</p>
+            <p><a class="btn btn-primary" href="#trips-list">See Trips</a> <a class="btn btn-outline"
+                    href="contact.html">Plan My Adventure</a></p>
         </section>
 
-        <section class="history">
-            <h2>History</h2>
-            <p>Our team is made up of certified guides and passionate adventure lovers who bring years of experience
-                navigating challenging rivers around the world. They will not only accompany you during the ride,
-                ensuring your safety and enjoyment at every step, but will also share their deep knowledge of river
-                dynamics, local ecosystems, and outdoor skills.</p>
-            <figure>
-                <img src="images/history.jpg" alt="Our team near the lake" />
-                <figcaption>Our team near the lake</figcaption>
-            </figure>
-            <p>Beyond guiding, they are dedicated to teaching you how to truly enjoy the journey—embracing the thrill of
-                the rapids while learning to respect the raw power and beauty of the river. With their guidance, every
-                trip becomes more than an adventure; it becomes a meaningful connection with nature.</p>
+        <!-- SUMMARY CARDS -->
+        <section id="trips-list" class="section container">
+            <h2>Popular Trips</h2>
+            <div class="cards-grid">
+                <article id="family-float" class="card">
+                    <img src="images/await_1.jpg" alt="Family float on a calm river">
+                    <div class="card-body">
+                        <h3>Family Float</h3>
+                        <p>2 hours • Class II • Ages 6+</p>
+                        <ul>
+                            <li>Calm waters and scenic views</li>
+                            <li>Great for first-timers</li>
+                            <li>Photos available</li>
+                        </ul>
+                        <p><a class="btn btn-small" href="#details-family">Details</a> <a class="btn btn-small"
+                                href="contact.html">Book</a></p>
+                    </div>
+                </article>
+
+                <article id="classic-run" class="card">
+                    <img src="images/await_2.jpg" alt="Team paddling through rapids">
+                    <div class="card-body">
+                        <h3>Classic Run</h3>
+                        <p>Half-day • Class III • Best seller</p>
+                        <ul>
+                            <li>Mix of calm sections and waves</li>
+                            <li>Great balance of fun and challenge</li>
+                            <li>Snacks included</li>
+                        </ul>
+                        <p><a class="btn btn-small" href="#details-classic">Details</a> <a class="btn btn-small"
+                                href="contact.html">Book</a></p>
+                    </div>
+                </article>
+
+                <article id="adrenaline" class="card">
+                    <img src="images/await_5.jpg" alt="Big splash on white water">
+                    <div class="card-body">
+                        <h3>Adrenaline Rush</h3>
+                        <p>Half-day • Class IV • Experienced</p>
+                        <ul>
+                            <li>Continuous rapids and drops</li>
+                            <li>Technical lines with guides</li>
+                            <li>Safety gear included</li>
+                        </ul>
+                        <p><a class="btn btn-small" href="#details-adrenaline">Details</a> <a class="btn btn-small"
+                                href="contact.html">Book</a></p>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
+        <!-- COMPARISON TABLE -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2>Compare Trips</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Age</th>
+                            <th>Includes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#details-family">Family Float</a></td>
+                            <td>2 hours</td>
+                            <td>Class II</td>
+                            <td>6+</td>
+                            <td>Guide, gear, photos (optional)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#details-classic">Classic Run</a></td>
+                            <td>4 hours</td>
+                            <td>Class III</td>
+                            <td>10+</td>
+                            <td>Guide, gear, snacks</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#details-adrenaline">Adrenaline Rush</a></td>
+                            <td>4 hours</td>
+                            <td>Class IV</td>
+                            <td>14+</td>
+                            <td>Guide, gear, safety briefing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <figure>
-                <img src="images/await.jpeg" alt="Rafting at the waterfall" />
-                <figcaption>Rafting at the waterfall</figcaption>
-            </figure>
+        <!-- DETAILED SECTIONS -->
+        <section id="details-family" class="section container">
+            <h2>Family Float — Details</h2>
+            <p>Perfect for first-timers and families looking to enjoy a calm and scenic experience on the river.</p>
+            <h3>Itinerary</h3>
+            <ol>
+                <li>Check-in and gear fitting</li>
+                <li>Safety talk and paddling basics</li>
+                <li>2-hour float with photo stops</li>
+                <li>Return to base and snacks</li>
+            </ol>
+            <p><a class="btn btn-primary" href="contact.html">Book Family Float</a></p>
+        </section>
 
-            <figure>
-                <img src="images/await_1.jpg" alt="Raft through green canyon" />
-                <figcaption>Raft through green canyon</figcaption>
-            </figure>
+        <section id="details-classic" class="section container">
+            <h2>Classic Run — Details</h2>
+            <p>Our most popular trip: a balanced mix of waves, splashes and quiet sections to enjoy the canyon.</p>
+            <h3>What to Bring</h3>
+            <ul>
+                <li>Swimwear and towel</li>
+                <li>Sunscreen and water bottle</li>
+                <li>Secure sandals or water shoes</li>
+            </ul>
+            <p><a class="btn btn-primary" href="contact.html">Book Classic Run</a></p>
+        </section>
 
-            <figure>
-                <img src="images/await_2.jpg" alt="Teamwork on the rapids" />
-                <figcaption>Teamwork on the rapids</figcaption>
-            </figure>
+        <section id="details-adrenaline" class="section container">
+            <h2>Adrenaline Rush — Details</h2>
+            <p>Continuous class IV white water for paddlers seeking a challenge under expert guidance.</p>
+            <h3>Requirements</h3>
+            <ul>
+                <li>Good physical condition</li>
+                <li>Previous paddling experience recommended</li>
+                <li>Minimum age 14</li>
+            </ul>
+            <p><a class="btn btn-primary" href="contact.html">Book Adrenaline Rush</a></p>
+        </section>
 
-            <figure>
-                <img src="images/await_4.jpg" alt="Fun descent with the crew" />
-                <figcaption>Fun descent with the crew</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/await_5.jpg" alt="Group run in white water" />
-                <figcaption>Group run in white water</figcaption>
-            </figure>
+        <!-- FAQ -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2>FAQ</h2>
+                <details>
+                    <summary>Is swimming required?</summary>
+                    <p>No, but being comfortable in water helps. Life jackets are provided.</p>
+                </details>
+                <details>
+                    <summary>What if it rains?</summary>
+                    <p>Trips run in most weather; we may reschedule for safety if river levels are extreme.</p>
+                </details>
+                <details>
+                    <summary>Can I bring a camera?</summary>
+                    <p>Action cameras with secure mounts are fine. We also offer photo packages.</p>
+                </details>
+            </div>
         </section>
     </main>
 
     <footer>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook.png" alt="Follow us on Facebook" width="40" />
+                <img src="images/facebook.png" alt="Facebook" width="40">
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.png" alt="Follow us on Twitter" width="40" />
+                <img src="images/twitter.png" alt="Twitter / X" width="40">
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/instgram.png" alt="Follow us on Instagram" width="40" />
+                <img src="images/instgram.png" alt="Instagram" width="40">
             </a>
             <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/tiktok.jpg" alt="Follow us on TikTok" width="40" />
+                <img src="images/tiktok.jpg" alt="TikTok" width="40">
             </a>
         </nav>
-        <p>&copy; 2025 The Rapids Adventure Co. | Hyrum Sahyl Isla Hernandez</p>
+        <p>&copy; <span id="year"></span> The Rapids Adventure Co.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
