@@ -67,16 +67,12 @@ header, main, footer{
   width:min(92%, 720px)
 }
 
-.hero h1{
-  top: clamp(12px, 6vh, 40px);
-  letter-spacing:.3px;
-}
-
-.hero .hero-article h1 {
-  margin-bottom: 30px; 
+.hero h1 {
+  margin-bottom: 50px; 
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 700;
   letter-spacing: .5px;
+  display: block;
 }
 
 .hero .hero-article{
