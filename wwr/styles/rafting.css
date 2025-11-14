@@ -801,3 +801,27 @@ html { scroll-behavior: smooth; }
 .site-nav a { color: #fff; text-decoration: none; }
 .site-nav a:hover,
 .site-nav a:focus { color: #f3f3f3; text-decoration: underline; }
+
+.home-hero,
+.hero--trips {
+  --overlay: var(--bg-gradient);
+  background-image: var(--overlay), url("../images/hero.jpg");
+}
+
+.site-nav { background: var(--dark); }
+footer   { background: var(--dark); }
+
+
+.section.hero, 
+.section.hero p, 
+.section.hero li, 
+.section.hero a { 
+  color: var(--text);         
+}
+
+.section.hero h2{
+  color: var(--text);
+  background: transparent;    
+  box-shadow: none;
+}
+
