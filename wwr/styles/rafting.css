@@ -850,26 +850,38 @@ footer   { background: var(--dark); }
 
 
 
-/* ==== FIX CONTRASTE PARA HERO ==== */
+/* ==== FIX FINAL CONTRASTE HERO ==== */
+
+/* Fondo oscuro general */
 section.hero {
   background: var(--dark, #111);
   color: #fff;
 }
+
+/* Textos interiores en blanco sobre fondo oscuro */
 section.hero h2,
 section.hero p,
 section.hero li,
 section.hero a {
   color: #fff;
 }
+
+/* Corrige el contraste del H2 — fondo semitransparente oscuro */
+section.hero h2 {
+  background: rgba(0, 0, 0, 0.6); /* visibilidad + contraste */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Accesibilidad: resalta links al enfocarse o pasar el mouse */
 section.hero a:hover,
 section.hero a:focus {
   text-decoration: underline;
 }
-section.hero h2 {
-  background: transparent;
-  box-shadow: none;
-}
 
+/* Doble clase de respaldo, si el HTML usa <div class="section hero"> */
 .section.hero {
   background: var(--dark, #111);
   color: #fff;
@@ -880,11 +892,10 @@ section.hero h2 {
 .section.hero a {
   color: #fff;
 }
-.section.hero a:hover,
-.section.hero a:focus {
-  text-decoration: underline;
-}
 .section.hero h2 {
-  background: transparent;
-  box-shadow: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
