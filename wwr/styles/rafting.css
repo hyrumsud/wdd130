@@ -797,7 +797,7 @@ html { scroll-behavior: smooth; }
 
 
 
-.site-nav { color: #fff; }                /* texto no enlazado */
+.site-nav { color: #fff; }              
 .site-nav a { color: #fff; text-decoration: none; }
 .site-nav a:hover,
 .site-nav a:focus { color: #f3f3f3; text-decoration: underline; }
@@ -848,3 +848,43 @@ footer   { background: var(--dark); }
   box-shadow: none;
 }
 
+
+
+/* ==== FIX CONTRASTE PARA HERO ==== */
+section.hero {
+  background: var(--dark, #111);
+  color: #fff;
+}
+section.hero h2,
+section.hero p,
+section.hero li,
+section.hero a {
+  color: #fff;
+}
+section.hero a:hover,
+section.hero a:focus {
+  text-decoration: underline;
+}
+section.hero h2 {
+  background: transparent;
+  box-shadow: none;
+}
+
+.section.hero {
+  background: var(--dark, #111);
+  color: #fff;
+}
+.section.hero h2,
+.section.hero p,
+.section.hero li,
+.section.hero a {
+  color: #fff;
+}
+.section.hero a:hover,
+.section.hero a:focus {
+  text-decoration: underline;
+}
+.section.hero h2 {
+  background: transparent;
+  box-shadow: none;
+}
