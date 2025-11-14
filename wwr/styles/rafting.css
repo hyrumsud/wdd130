@@ -869,7 +869,6 @@ section.hero a {
 /* Corrige el contraste del H2 — fondo semitransparente oscuro */
 section.hero h2 {
   background: rgba(0, 0, 0, 0.6); /* visibilidad + contraste */
-  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
