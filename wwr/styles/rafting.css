@@ -825,3 +825,26 @@ footer   { background: var(--dark); }
   box-shadow: none;
 }
 
+
+.section.hero {
+  background: var(--dark, #111);
+  color: #fff;
+}
+
+.section.hero h2,
+.section.hero p,
+.section.hero li,
+.section.hero a {
+  color: #fff;
+}
+
+.section.hero a:hover,
+.section.hero a:focus {
+  text-decoration: underline;
+}
+
+.section.hero h2{
+  background: transparent;
+  box-shadow: none;
+}
+
