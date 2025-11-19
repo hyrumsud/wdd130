@@ -89,6 +89,7 @@ footer {
   text-align: center;
   position: relative;
   isolation: isolate;
+  background-color: #111;
 }
 
 .hero h1 {
