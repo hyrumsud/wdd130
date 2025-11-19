@@ -314,6 +314,7 @@ footer::after {
   filter: drop-shadow(0 6px 12px rgba(0,0,0,.6)) saturate(1.2);
 }
 
+
 footer p {
   margin: 0;
   font: 500 0.95rem/1.4 var(--body-font);
