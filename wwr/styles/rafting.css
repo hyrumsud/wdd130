@@ -557,3 +557,245 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ================================
+   TRIPS PAGE
+=================================== */
+
+/* Hero específico para Trips */
+.hero.hero--trips {
+  width: min(100%, 800px);
+  margin: 1.75rem auto 2.25rem;
+  padding: 2.4rem 1.5rem 2.6rem;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sobrescribimos el h1 del hero solo cuando es hero--trips */
+.hero.hero--trips h1 {
+  position: static;          /* quita el absolute del .hero general */
+  transform: none;
+  margin: 0 0 0.75rem;
+  width: 100%;
+  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
+  text-shadow: 0 2px 6px rgba(0,0,0,.65);
+}
+
+.hero.hero--trips p {
+  margin: 0.25rem 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,.7);
+}
+
+/* ================================
+   UTILIDADES DE LAYOUT
+=================================== */
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  margin: 2.25rem auto;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+/* sección oscura alterna (tabla y FAQ) */
+.section-alt {
+  background: rgba(0,0,0,.55);
+  box-shadow: 0 18px 32px rgba(0,0,0,.6);
+  padding: 1.9rem 0 2.1rem;
+}
+
+.section h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,.35));
+  text-shadow: 0 2px 6px rgba(0,0,0,.6);
+  width: fit-content;
+  margin: 0 auto 1.25rem;
+}
+
+/* ================================
+   BOTONES
+=================================== */
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,.55);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+
+/* equivalente a .btn.primary que ya usas en contact */
+.btn-primary {
+  background: rgba(255,255,255,0.9);
+  color: #111;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(0,0,0,.65);
+}
+
+/* botón con borde blanco */
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,0.85);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(0,0,0,.65);
+}
+
+/* versión pequeña para las tarjetas */
+.btn-small {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  box-shadow: 0 6px 14px rgba(0,0,0,.45);
+}
+
+/* ================================
+   TRIP CARDS (Popular Trips)
+=================================== */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.card {
+  background: rgba(0,0,0,.65);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0,0,0,.55);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0.9rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.card-body h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-body ul {
+  margin: 0.4rem 0 0.5rem;
+  padding-left: 1.1rem;
+}
+
+/* ================================
+   TABLA DE COMPARACIÓN
+=================================== */
+
+.section-alt table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.section-alt thead {
+  background: rgba(0,0,0,.7);
+}
+
+.section-alt th,
+.section-alt td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  text-align: left;
+}
+
+.section-alt th {
+  font-weight: 700;
+}
+
+.section-alt tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.03);
+}
+
+.section-alt a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ================================
+   FAQ (details / summary)
+=================================== */
+
+.section-alt details {
+  margin-top: 0.7rem;
+  background: rgba(0,0,0,.6);
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.55);
+}
+
+.section-alt summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.section-alt details p {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* ================================
+   RESPONSIVE TRIPS
+=================================== */
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero.hero--trips {
+    padding: 2rem 1.2rem 2.3rem;
+  }
+}
